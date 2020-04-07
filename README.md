@@ -34,8 +34,8 @@ In order for the clusters to be able to communicate the mac addresses of the int
 
 This can be modified by altering config/server[number]/k3os/config.yaml
 
-server1 = 192.168.1.115
-server2 = 192.168.1.116
-server2 = 192.168.1.117
+ - server1 = 192.168.1.115
+ - server2 = 192.168.1.116
+ - server2 = 192.168.1.117
 
-both the boot_cmd and k3_args should be updated if any ip address changes.
+Both the boot_cmd and k3_args should be updated if any ip address changes.
