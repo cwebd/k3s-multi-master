@@ -1,0 +1,28 @@
+boot_cmd:
+  - echo -e "[ethernet_6eb0b992eb1b_cable]\nName=Wired\nAutoConnect=true\nIPv4.method=manual\nIPv4.netmask_prefixlen=24\nIPv4.local_address=192.168.1.117\nIPv4.gateway=192.168.1.1\nIPv6.method=disabled\nIPv6.privacy=disabled" > /var/lib/connman/ethernet_6eb0b992eb1b_cable/settings
+ssh_authorized_keys:
+  - ssh-ed25519 AAAAC3NzaC1lZDI1NTE5AAAAIF2zEKdNvlYeEiZdsXg1Hm+YCCa7Nc5njncq3OVyndDO darren@cwebd.co.uk
+hostname: "k3s-server-03.cluster.k3s"
+k3os:
+  data_sources:
+  modules:
+    - kvm
+    - nvme
+  sysctl:
+    kernel.printk: 4 4 1 7
+    kernel.kptr_restrict: 1
+  ntp_servers:
+    - 1.uk.pool.ntp.org
+    - 2.uk.pool.ntp.org
+    - 3.uk.pool.ntp.org
+  dns_nameservers:
+    - 1.1.1.1
+    - 8.8.8.8
+  # Rancher User PW
+  password: "rancher"
+  token: "fdd80be8d47076f4b3d849cd65231aee6da61bac6d836a8b00846fc66fbd3458"
+  server_url: https://192.168.1.115:6443
+  k3s_args:
+    - server
+    - "--node-ip=192.168.1.117"
+    - "--node-external-ip=192.168.1.117"
