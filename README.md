@@ -24,9 +24,9 @@ k3s-server-03.cluster.k3s   Ready    master   9m26s   v1.17.2+k3s1
 
 ## Tested in
 
-Ubuntu 18.04LTS
-Vagrant 2.2.7
-Virtualbox 6.1
+ - Ubuntu 18.04LTS
+ - Vagrant 2.2.7
+ - Virtualbox 6.1
 
 ## Networking
 
