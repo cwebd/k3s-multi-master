@@ -13,6 +13,7 @@ This vagrant setup will launch three k3s virtualbox master servers to allow for 
 Once the boxes are loaded
 
 `$>vagrant ssh server1`
+
 `$>kubectl get nodes`
 
 ```
