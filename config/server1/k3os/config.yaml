@@ -26,3 +26,4 @@ k3os:
     - "--cluster-init"
     - "--node-ip=192.168.1.115"
     - "--node-external-ip=192.168.1.115"
+    - "--flannel-iface=eth1"
