@@ -26,3 +26,4 @@ k3os:
     - server
     - "--node-ip=192.168.1.116"
     - "--node-external-ip=192.168.1.116"
+    - "--flannel-iface=eth1"
