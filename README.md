@@ -1,3 +1,7 @@
+# Repository archived, replaced with:
+
+https://github.com/cwebd/k3os-vagrant/
+
 # Multi Master (HA) k3os Virtualbox vagrant setup
 
 ## Details
